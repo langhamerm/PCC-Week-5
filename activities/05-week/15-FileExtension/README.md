@@ -29,6 +29,29 @@ You have an array of filenames with extensions. Sort the files into arrays based
     "omg_my_sneakers.avi",
     "cat_you_are_the_worst.mp4"
   ];
+
+var images = [
+"owens_asleep_at_the_computer.jpg",
+"ruby_skydiving.jpeg",
+"ken_getting_his_black_belt.png",
+"its_hard_to_come_up_with_file_names.gif",
+"i_wonder_how_many_of_these_i_should_have.png",
+"cat_i_will_destroy_you.gif",
+"i_wish_we_had_a_dog.jpeg",
+"aww_i_cant_hate_you.png"
+];
+
+var movies = [
+"pavans_first_birthday.mov",
+"michael_fights_a_polar_bear.mp4",
+"nate_road_rage.avi",
+"dan_winning_underground_street_race.mov",
+"seriously_this_is_taking_too_long.mpg",
+"probably_a_few_more.avi",
+"stop_looking_at_me_like_that_nutmeg.mpeg",
+"omg_my_sneakers.avi",
+"cat_you_are_the_worst.mp4"
+]
 ```
 
 ## Info

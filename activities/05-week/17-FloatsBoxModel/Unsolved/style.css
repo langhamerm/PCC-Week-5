@@ -1,19 +1,22 @@
 body {
   font-size: 24px;
   background-color: lightgrey;
+  justify-content: center;
 }
 
 h1 {
   color: white;
   text-align: center;
   background-color: navy;
+  
 }
 
 #left {
   float: left;
   width: 75%;
   padding: 2%;
-  background-color: cornflowerblue;
+  box-sizing: border-box;
+  background-color: blue;
 }
 
 #right {
@@ -21,9 +24,19 @@ h1 {
   width: 25%;
   padding: 2%;
   background-color: #b20;
+  overflow: auto;
+  height: 673px;
+  box-sizing: border-box;
 }
 
 #text-wrapper {
   width: 1024px;
   background-color: antiquewhite;
+  margin-left: 0 auto;
+
+}
+
+#helper{
+  clear:both; 
+  
 }

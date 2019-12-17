@@ -67,3 +67,65 @@ var unsortedArr = [
   292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185,
   181, 485, 495, 81, 169, 294, 79, 400, 92, 104, 249
 ];
+
+// $("#start").html("<div>" + unsortedArr + "</div>");
+
+// function bubble_Sort(unsortedArr)
+// {
+//     var swapp;
+//     var n = unsortedArr.length-1;
+//     var x=a;
+//     do {
+//         swapp = false;
+//         for (var i=0; i < n; i++)
+//         {
+//             if (x[i] < x[i+1])
+//             {
+//                var temp = x[i];
+//                x[i] = x[i+1];
+//                x[i+1] = temp;
+//                swapp = true;
+//             }
+//         }
+//         n--;
+//     } while (swapp);
+//  return x; 
+// };
+
+// $("#go").on("click", function(){
+//   function bubble_Sort();
+//   $("#result").html("")
+// });
+
+
+function bubbleSort(arr){
+  //sorted variable acts as a flag to let us know when is sorted
+  var sorted = false;
+  while (!sorted){
+    sorted = true;
+    //loop through array
+    for (var i = 0; i < arr.length; i++){
+      //if current element is larger than next element, swap them
+      //and set sorted to false
+      if(arr[i] > arr[i+1]){
+        sorted = false;
+        var temp = arr[i];
+        arr[i]= arr[i+1];
+        arr[i + 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+// insert he contents of the unsorted arry into the start div
+
+document.querySelector("#start").innerText = unsortedArr.join (", ");
+//get reference to button and add click event
+var goBtn = document.querySelector("#go");
+
+goBtn.addEventListener("click", function(){
+  // get sorted array and insert its contents into the result div
+  var sortedARR = bubbleSort(unsortedArr);
+  document.querySelector("#result").innerText = sortedARR.join(", ");
+})
