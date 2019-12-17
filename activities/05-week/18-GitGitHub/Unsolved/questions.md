@@ -12,7 +12,7 @@ store projects remotely
 could do it in command line 
  * 'git init'
 5. Once a repository is created and linked to GitHub, what are the three commands you need to do each time you create or modify files to send something up to GitHub?
-    * `git add / `
+    * `git add `
     `git commit -m <comment>`
     `git push orgin <branch name>`
 6. How do you update your local repository from GitHub?
