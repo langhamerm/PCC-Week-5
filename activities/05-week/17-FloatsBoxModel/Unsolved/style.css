@@ -1,29 +1,38 @@
 body {
-  font-size: 24px;
-  background-color: lightgrey;
+    font-size: 24px;
+    background-color: lightgrey;
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  background-color: navy;
+    color: white;
+    text-align: center;
+    background-color: navy;
 }
 
 #left {
-  float: left;
-  width: 75%;
-  padding: 2%;
-  background-color: cornflowerblue;
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: cornflowerblue;
 }
 
 #right {
-  float: right;
-  width: 25%;
-  padding: 2%;
-  background-color: #b20;
+    float: right;
+    width: 25%;
+    height: 653px;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: #b20;
+    overflow: auto;
 }
 
 #text-wrapper {
-  width: 1024px;
-  background-color: antiquewhite;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+#helper {
+    clear: both;
 }
